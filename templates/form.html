@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title> Super Sprinter 3000 </title>
+</head>
+<body>
+<h2> Super Sprinter 3000 - Edit Story </h2>
+<form action = 'update_story/23' method='post'>
+<p><label for='story_title'>Story Title</label><br></p>
+<input type='text' name='story_title' id='story_title' value='Sokadik' size='81' required>
+<p><label for='user_story'>User Story</label><br></p>
+<textarea name='user_story' id='user_story' rows='5' cols='80' required>Sok sok sok</textarea>
+<p><label for='acceptance_criteria'>Acceptance Criteria</label><br></p>
+<textarea name='acceptance_criteria' id='acceptance_criteria' rows='5' cols='80' required>Elfogajuk?</textarea>
+<p><label for='business_value'>Business Value</label><br></p>
+<input type='number' name='business_value' id='business_value' step='100' min='100' max='1500' value=900 required>
+<p><label for='estimation_hour'>Estimation Hour</label><br></p>
+<input type='number' name='estimation_hour' id='estimation_hour' step='0.5' min='0.5' max='40' value=5.0 required>
+<p><label for='status'>Status</label><br></p>
+<select name='status' id='status' required>
+<option> Planning </option>
+<option> To Do </option>
+<option> In progress </option>
+<option selected> Review </option>
+<option> Done </option>
+</select>
+<p>
+<input type = 'submit' value='Update story'>
+</p>
+</form>
+</body>
+</html>
